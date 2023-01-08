@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_speech_to_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Convert to Sign Language"
+        android:textColor="@color/purple_700"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffcc"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtSpeechText"
+            android:layout_weight=".8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Metin... / Text..."
+            android:padding="12dp" />
+
+        <ImageButton
+            android:id="@+id/imgBtnMic"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_mic_off" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black"></View>
+
+    <ImageView
+        android:id="@+id/showImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:layout_margin="75dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_main_img"></ImageView>
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="@color/black"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="10">
+
+        <ImageButton
+            android:id="@+id/languageBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/en"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            ></ImageButton>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"></View>
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/ic_back_img"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/convertBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/ic_show_img"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/ic_next_img"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+
+            ></ImageButton>
+
+    </LinearLayout>
+
+
+</LinearLayout>
